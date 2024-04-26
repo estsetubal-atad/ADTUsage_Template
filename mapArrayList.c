@@ -192,8 +192,9 @@ void mapPrint(PtMap map) {
 	else {
 		for (int i = 0; i < map->size; i++) {
 			mapKeyPrint(map->elements[i].key);
-			printf(" : \n");
+			printf(" : ");
 			mapValuePrint(map->elements[i].value);
+			printf("\n");
 		}
 	}
 }
